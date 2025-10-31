@@ -37,6 +37,7 @@ section {
     border-left: none;
     border-right: none;
     height: 40px;
+    transition: all 300ms ease;
 }
 
 textarea {
@@ -48,6 +49,14 @@ textarea {
 label {
     font-size: 14px;
     font-weight: bold;
+}
+
+input:hover, textarea:hover {
+    border-color: #dcdfe6;
+}
+
+input:focus, textarea:focus {
+    border-color: #660711;
 }
 
 .container {
@@ -63,6 +72,7 @@ label {
 }
 
 .click {
+    cursor: pointer;
     transition: all 300ms ease;
 }
 
@@ -276,6 +286,7 @@ MODAL
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 
 .modal__about {
@@ -354,16 +365,66 @@ MODAL
 }
 
 .form__submit:hover {
-    border-color: rgb(0, 104, 71);
-    background-color: rgb(0, 104, 71);
+    border-color: #006847;
+    background-color: #006847;
     color: black;
 }
 
 .form__submit:active {
-    border-color:#006847;
-    color:#006847;
+    border-color:#660711;
+    background-color: #8f8f8c;
+    color:#660711;
+    transform: translateY(1px);
 }
 
+.modal__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__overlay--loading {
+    background-color: #8f8f8c;
+    font-size: 80px;
+    z-index: -1; /* This hides the background loading screen */
+}
+
+.modal__overlay--success {
+    background-color: #006847;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding: 28px;
+}
+
+.fa-spinner {
+    animation: spinner 750ms infinite linear;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.modal__exit {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: black;
+    font-size: 36px;
+    z-index: 100; /* this keeps it in front of everything and eliminates the risk of the X button not showing up */
+}
+    
 /* 
 
 PROJECTS

@@ -142,12 +142,19 @@
               <label class="form__item--label">Message</label>
               <textarea class="input" name="message" type="text" required></textarea>
             </div>
-            <button id="contact__submit" class="form__submit" >
+            <button id="contact__submit" class="form__submit" type="button">
               Let's connect!
             </button>
           </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Your message is greatly appreciated and I will be in contact with you soon!
+          </div>
         </div>
-        </div>
+        <i class="fas fa-times modal__exit click"></i>
+      </div>
       </div>
     </section>
     <section id="projects">
