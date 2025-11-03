@@ -386,12 +386,13 @@ MODAL
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: -1; /* This hides the background loading screen */
 }
 
 .modal__overlay--loading {
     background-color: #8f8f8c;
     font-size: 80px;
-    z-index: -1; /* This hides the background loading screen */
+
 }
 
 .modal__overlay--success {
