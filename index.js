@@ -87,7 +87,7 @@ function contact(event) {
   event.preventDefault();
   const loading = document.querySelector(".modal__overlay--loading");
   const success = document.querySelector(".modal__overlay--success");
-
+  loading.classList += " modal__overlay--visible";
   emailjs
     .sendForm(
       "service_fr3vq0s",
@@ -96,7 +96,6 @@ function contact(event) {
       "KJXHaU6B8Zzu04vLT"
     )
     .then(() => {
-      throw new Error("error");
       loading.classList.remove("modal__overlay--visible");
       success.classList += " modal__overlay--visible";
     })
@@ -106,11 +105,4 @@ function contact(event) {
         "The email service is temporarily unavailable Please contact me directly on venus.kandy@gmail.com"
       );
     });
-
-  loading.classList += " modal__overlay--visible";
-  setTimeout(() => {
-    loading.classList.remove("modal__overlay--visible");
-    success.classList += " modal__overlay--visible";
-    console.log("it worked1");
-  }, 1000);
 }
