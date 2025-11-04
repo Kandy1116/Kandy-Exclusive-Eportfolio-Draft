@@ -102,7 +102,7 @@ function contact(event) {
     loading.classList += " modal__overlay--visible" 
     setTimeout(() => {
         loading.classList.remove("modal__overlay--visible" )
-        sucess.classList += " modal__overlay--visible";
+        success.classList += " modal__overlay--visible";
         console.log('it worked1')
     }, 1000);
 }
