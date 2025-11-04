@@ -9,11 +9,10 @@
       src="https://kit.fontawesome.com/9d8d894522.js"
       crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
-    <script src="./email.js"></script>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
+    <script src="index.js" defer></script>
 <script type="text/javascript">
    (function() {
       emailjs.init("user_KJXHaU6B8Zzu04vLT");
@@ -140,6 +139,23 @@
             I look forward to discussing how I can add value to your team.
           </h3>
           <form id="contact__form">
+<div class="form__item">
+<label class="form__item--label">Name</label>
+<input class="input" name="user_name" type="text">
+</div>
+<div class="form__item">
+<label class="form__item--label">Email</label>
+<input class="input" name="user_email" type="email">
+</div>
+<div class="form__item">
+<label class="form__item--label">Message</label>
+<textarea class="input" name="message"></textarea>
+</div>
+<button id="contact__submit" class="form__submit" type="submit">
+Let's connect!
+</button>
+</form>
+          <!-- <form id="contact__form">
   <div class="form__item">
     <label for="user_name" class="form__item--label">Name</label>
     <input id="user_name" class="input" name="user_name" type="text"  />
@@ -157,7 +173,7 @@
   <button id="contact__submit" class="form__submit" type="submit">
     Let's Connect
   </button>
-</form>
+</form> -->
           <div class="modal__overlay modal__overlay--loading">
             <i class="fas fa-spinner"></i>
           </div>
