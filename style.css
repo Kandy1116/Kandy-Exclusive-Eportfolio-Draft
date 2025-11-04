@@ -52,7 +52,7 @@ label {
 }
 
 input:hover, textarea:hover {
-    border-color: #dcdfe6;
+    border-color: #660711;
 }
 
 input:focus, textarea:focus {
@@ -421,8 +421,8 @@ MODAL
     position: absolute;
     top: 30px;
     right: 40px;
-    color: black;
-    font-size: 36px;
+    color: #8f8f8c;
+    font-size: 20px;
     z-index: 100; /* this keeps it in front of everything and eliminates the risk of the X button not showing up */
 }
     

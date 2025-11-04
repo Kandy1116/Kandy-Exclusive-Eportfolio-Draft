@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="index.js"></script>
+    <script src="./email.js"></script>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
@@ -138,23 +139,25 @@
           <h3 class="modal__sub-title modal__sub-title--contact">
             I look forward to discussing how I can add value to your team.
           </h3>
-          <form id="contact__form" onsubmit="contact(event)">
-            <div class="form__item">
-              <label class="form__item--label">Name</label>
-              <input class="input" name="user_name" type="text"></input>
-            </div>
-            <div class="form__item">
-              <label class="form__item--label">Email</label>
-              <input class="input" name="user_email" type="email"></input>
-            </div>
-            <div class="form__item">
-              <label class="form__item--label">Message</label>
-              <textarea class="input" name="message" type="text"></textarea>
-            </div>
-            <button id="contact__submit" class="form__submit" type="button">
-              Let's connect!
-            </button>
-          </form>
+          <form id="contact__form">
+  <div class="form__item">
+    <label for="user_name" class="form__item--label">Name</label>
+    <input id="user_name" class="input" name="user_name" type="text"  />
+  </div>
+  <div class="form__item">
+    <label for="user_email" class="form__item--label">Email</label>
+    <input id="user_email" class="input" name="user_email" type="email"  />
+  </div>
+
+  <div class="form__item">
+    <label for="message" class="form__item--label">Message</label>
+    <textarea id="message" class="input" name="message" required></textarea>
+  </div>
+
+  <button id="contact__submit" class="form__submit" type="submit">
+    Let's Connect
+  </button>
+</form>
           <div class="modal__overlay modal__overlay--loading">
             <i class="fas fa-spinner"></i>
           </div>
