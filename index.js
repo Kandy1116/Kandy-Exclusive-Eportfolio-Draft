@@ -101,7 +101,8 @@ function contact(event) {
     const success = document.querySelector('.modal__overlay--success')
     loading.classList += " modal__overlay--visible" 
     setTimeout(() => {
+        loading.classList.remove("modal__overlay--visible" )
         console.log('it worked1')
-    }, 500);
+    }, 1000);
 }
 
