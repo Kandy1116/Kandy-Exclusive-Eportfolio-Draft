@@ -44,18 +44,18 @@
               >Projects</a
             >
           </li>
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Contact</a
             >
           </li>
-          <li class="nav__link click">
+          <li class="nav__link click" onclick="toggleContrast()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              ><i class="fa-solid fa-circle-half-stroke"></i
+              ><i class="fas fa-adjust"></i
             ></a>
           </li>
         </ul>
@@ -71,7 +71,7 @@
             solutions. My focus is on developing intuitive and efficient web
             applications that make a significant impact.
             <br />
-            Learn more <b class="red">about me.</b>
+            Learn more <b class="red click" onclick="toggleModal()">about me.</b>
           </p>
           <div class="social__list">
             <a
@@ -97,7 +97,7 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click">
+      <button class="mail__btn click" onclick="toggleModal()">
         <i class="fa-solid fa-envelope"></i>
       </button>
       <a href="#projects" class="scroll">
@@ -132,6 +132,7 @@
           </div>
         </div>
         <div class="modal__half modal__contact">
+        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
           <h3 class="modal__title modal__title--contact">
             Thank you for your consideration.
           </h3>
@@ -155,33 +156,13 @@
 Let's connect!
 </button>
 </form>
-          <!-- <form id="contact__form">
-  <div class="form__item">
-    <label for="user_name" class="form__item--label">Name</label>
-    <input id="user_name" class="input" name="user_name" type="text"  />
-  </div>
-  <div class="form__item">
-    <label for="user_email" class="form__item--label">Email</label>
-    <input id="user_email" class="input" name="user_email" type="email"  />
-  </div>
-
-  <div class="form__item">
-    <label for="message" class="form__item--label">Message</label>
-    <textarea id="message" class="input" name="message" required></textarea>
-  </div>
-
-  <button id="contact__submit" class="form__submit" type="submit">
-    Let's Connect
-  </button>
-</form> -->
-          <div class="modal__overlay modal__overlay--loading">
+                   <div class="modal__overlay modal__overlay--loading">
             <i class="fas fa-spinner"></i>
           </div>
           <div class="modal__overlay modal__overlay--success">
             Your message is greatly appreciated and I will be in contact with you soon!
           </div>
         </div>
-        <i class="fas fa-times modal__exit click"></i>
       </div>
       </div>
     </section>
