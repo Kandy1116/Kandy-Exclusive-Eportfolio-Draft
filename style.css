@@ -621,3 +621,82 @@ footer {
 .footer__copyright {
     color: white;
 }
+
+/* 
+
+SHAPES
+
+*/
+
+.shape {
+    position: fixed;
+}
+
+.shape--0 {
+    left: 5vh;
+    height: 3vh;
+    width: 3vh;
+    opacity: 70%;    
+}
+
+.shape--1 {
+    left: 42vh;
+    height: 3vh;
+    width: 2.5vh;
+    opacity: 70%;   
+}
+
+.shape--2 {
+    left: 80vh;
+    height: 4vh;
+    width: 4vh;
+    opacity: 70%;   
+}
+
+.shape--3 {
+    top: 55vh;
+    left: 5vh;
+    height: 4vh;
+    width: 4vh;
+    opacity: 30%;
+}
+
+.shape--4 {
+    top: 55vh;
+    left: 42vh;
+    height: 4vh;
+    width: 3vh;
+    opacity: 30%;
+}
+
+.shape--5 {
+    top: 55vh;
+    left: 80vh;
+    height: 3vh;
+    width: 2.5vh;
+    opacity: 70%;
+}
+
+.shape--6 {
+    top: 90vh;
+    left: 5vh;
+    height: 3vh;
+    width: 4vh;
+    opacity: 70%;   
+}
+
+.shape--7 {
+    top: 90vh;
+    left: 42vh;
+    height: 3vh;
+    width: 3vh;
+    opacity: 70%;   
+}
+
+.shape--8 {
+    top: 90vh;
+    left: 80vh;
+    height: 3vh;
+    width: 3vh;
+    opacity: 70%;   
+}
